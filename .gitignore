@@ -3,6 +3,7 @@ node_modules
 /dist
 
 /tests/e2e/videos
+.firebase/
 
 # local env files
 .env.local
