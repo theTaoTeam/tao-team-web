@@ -1,9 +1,9 @@
 .DS_Store
 node_modules
 /dist
+.firebase/
 
 /tests/e2e/videos
-.firebase/
 
 # local env files
 .env.local
