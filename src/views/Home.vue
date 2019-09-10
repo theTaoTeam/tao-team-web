@@ -2,10 +2,7 @@
   <div class="home-container">
     <LogoLight class="logo" />
     <div class="main-container">
-      <h1 class="hero">
-        Creative technology is kind of our jam
-        <span class="highlight">.</span>
-      </h1>
+      <h1 class="hero">Creative technology is kind of our jam<span class="highlight">.</span></h1>
       <NavigationDot />
     </div>
   </div>
