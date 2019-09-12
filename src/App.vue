@@ -10,9 +10,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component
-export default class App extends Vue {
-  transitionName?: string;
-}
+export default class App extends Vue {}
 </script>
 
 <style lang="scss">
@@ -27,7 +25,6 @@ export default class App extends Vue {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #f9f9f9;
-  height: 100vh;
   padding: 5vh 5vw;
 }
 

@@ -34,7 +34,7 @@ export default class Home extends Vue {}
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80%;
+  height: 70%;
 }
 
 .hero {

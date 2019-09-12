@@ -34,6 +34,7 @@ export default class Contact extends Vue {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .hero,
