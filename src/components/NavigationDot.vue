@@ -20,6 +20,7 @@ export default class NavigationDot extends Vue {}
   animation-duration: 2s;
   animation-iteration-count: 5;
   animation-delay: 2s;
+  cursor: pointer;
 }
 
 .bounce {

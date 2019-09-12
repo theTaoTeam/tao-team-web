@@ -1,49 +1,53 @@
 <template>
-  <div class="home-container">
-    <LogoLight class="logo" />
-    <div class="main-container">
-      <h1 class="hero">Creative technology is kind of our jam<span class="highlight">.</span></h1>
-      <router-link to="/contact">
-        <NavigationDot />
-      </router-link>
-    </div>
+  <div class="main-container">
+    <router-link to="/">
+      <NavigationDot />
+    </router-link>
+    <h1 class="hero">Have a big problem that needs solving?</h1>
+    <p>Let's <a href="mailto:info@tao.team" target="_blank">get started</a>.</p>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import LogoLight from '@/components/LogoLight.vue';
 import NavigationDot from '@/components/NavigationDot.vue';
 
 @Component({
   components: {
-    LogoLight,
     NavigationDot,
   },
 })
-export default class Home extends Vue {}
+export default class Contact extends Vue {
+  created() {
+    this.$store.commit('setAppBackgroundColor', '#ff4040');
+  }
+
+  beforeDestroy() {
+    this.$store.commit('resetAppBackgroundColor');
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-.home-container {
-  height: 100vh;
-}
-
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80%;
 }
 
-.hero {
+.hero,
+p {
   font-weight: 800;
   width: 80%;
   margin: 10vh auto;
   font-size: calc(40px + (75 - 40) * ((100vw - 320px) / (1024 - 320)));
   line-height: 1.1em;
   text-align: left;
+}
+
+a {
+  color: #151515;
 }
 
 .logo {
@@ -56,5 +60,9 @@ export default class Home extends Vue {}
 
 .highlight {
   color: #ff4040;
+}
+
+.navigation-dot {
+  background-color: #f9f9f9;
 }
 </style>
