@@ -35,6 +35,8 @@ export default class Contact extends Vue {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 15vh;
 }
 
 .hero,
