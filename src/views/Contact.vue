@@ -4,7 +4,7 @@
       <NavigationDot />
     </router-link>
     <h1 class="hero">Have a big problem that needs solving?</h1>
-    <p>Let's <a href="mailto:info@tao.team" target="_blank">get started</a>.</p>
+    <p>Let's <a href="mailto:info@tao.team?subject=Let's build something awesome" target="_blank">get started</a>.</p>
   </div>
 </template>
 
